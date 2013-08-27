@@ -24,6 +24,7 @@
 		FA3DE6B116A34212005B8CFC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3DE69016A34212005B8CFC /* CoreData.framework */; };
 		FA3DE6B916A34213005B8CFC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA3DE6B716A34213005B8CFC /* InfoPlist.strings */; };
 		FA3DE6BC16A34213005B8CFC /* AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3DE6BB16A34213005B8CFC /* AppTests.m */; };
+		FAAA7C7717CCC84F004978E7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FAAA7C7617CCC84F004978E7 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,10 +43,10 @@
 		FA3DE68C16A34212005B8CFC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FA3DE68E16A34212005B8CFC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		FA3DE69016A34212005B8CFC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		FA3DE69416A34212005B8CFC /* App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "App-Info.plist"; sourceTree = "<group>"; };
+		FA3DE69416A34212005B8CFC /* App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "App-Info.plist"; path = "App/App-Info.plist"; sourceTree = "<group>"; };
 		FA3DE69616A34212005B8CFC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FA3DE69816A34212005B8CFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FA3DE69A16A34212005B8CFC /* App-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "App-Prefix.pch"; sourceTree = "<group>"; };
+		FA3DE69816A34212005B8CFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = App/main.m; sourceTree = "<group>"; };
+		FA3DE69A16A34212005B8CFC /* App-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "App-Prefix.pch"; path = "App/App-Prefix.pch"; sourceTree = "<group>"; };
 		FA3DE69B16A34212005B8CFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FA3DE69C16A34212005B8CFC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FA3DE69E16A34212005B8CFC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -58,6 +59,7 @@
 		FA3DE6B816A34213005B8CFC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FA3DE6BA16A34213005B8CFC /* AppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppTests.h; sourceTree = "<group>"; };
 		FA3DE6BB16A34213005B8CFC /* AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppTests.m; sourceTree = "<group>"; };
+		FAAA7C7617CCC84F004978E7 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +91,10 @@
 		FA3DE67B16A34212005B8CFC = {
 			isa = PBXGroup;
 			children = (
+				FAAA7C7617CCC84F004978E7 /* Podfile */,
 				FA3DE69216A34212005B8CFC /* App */,
+				FAAA7C6E17CCC6E5004978E7 /* Config */,
+				FAAA7C6F17CCC6EC004978E7 /* Library */,
 				FA3DE6B416A34213005B8CFC /* AppTests */,
 				FA3DE68916A34212005B8CFC /* Frameworks */,
 				FA3DE68716A34212005B8CFC /* Products */,
@@ -120,26 +125,16 @@
 		FA3DE69216A34212005B8CFC /* App */ = {
 			isa = PBXGroup;
 			children = (
+				FAAA7C7017CCC744004978E7 /* Assets */,
+				FAAA7C7117CCC74D004978E7 /* Controllers */,
+				FAAA7C7217CCC759004978E7 /* Models */,
+				FAAA7C7317CCC763004978E7 /* Templates */,
+				FAAA7C7417CCC76C004978E7 /* Views */,
 				FA3DE69B16A34212005B8CFC /* AppDelegate.h */,
 				FA3DE69C16A34212005B8CFC /* AppDelegate.m */,
 				FA3DE6A416A34212005B8CFC /* App.xcdatamodeld */,
-				FA3DE69316A34212005B8CFC /* Supporting Files */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		FA3DE69316A34212005B8CFC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				FA3DE69416A34212005B8CFC /* App-Info.plist */,
-				FA3DE69516A34212005B8CFC /* InfoPlist.strings */,
-				FA3DE69816A34212005B8CFC /* main.m */,
-				FA3DE69A16A34212005B8CFC /* App-Prefix.pch */,
-				FA3DE69E16A34212005B8CFC /* Default.png */,
-				FA3DE6A016A34212005B8CFC /* Default@2x.png */,
-				FA3DE6A216A34212005B8CFC /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		FA3DE6B416A34213005B8CFC /* AppTests */ = {
@@ -159,6 +154,70 @@
 				FA3DE6B716A34213005B8CFC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAAA7C6E17CCC6E5004978E7 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				FA3DE69416A34212005B8CFC /* App-Info.plist */,
+				FA3DE69516A34212005B8CFC /* InfoPlist.strings */,
+				FA3DE69816A34212005B8CFC /* main.m */,
+				FA3DE69A16A34212005B8CFC /* App-Prefix.pch */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		FAAA7C6F17CCC6EC004978E7 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		FAAA7C7017CCC744004978E7 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FAAA7C7517CCC789004978E7 /* Images */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		FAAA7C7117CCC74D004978E7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		FAAA7C7217CCC759004978E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FAAA7C7317CCC763004978E7 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Templates;
+			sourceTree = "<group>";
+		};
+		FAAA7C7417CCC76C004978E7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FAAA7C7517CCC789004978E7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FA3DE69E16A34212005B8CFC /* Default.png */,
+				FA3DE6A016A34212005B8CFC /* Default@2x.png */,
+				FA3DE6A216A34212005B8CFC /* Default-568h@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +294,7 @@
 				FA3DE69F16A34212005B8CFC /* Default.png in Resources */,
 				FA3DE6A116A34212005B8CFC /* Default@2x.png in Resources */,
 				FA3DE6A316A34212005B8CFC /* Default-568h@2x.png in Resources */,
+				FAAA7C7717CCC84F004978E7 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +360,7 @@
 				FA3DE69616A34212005B8CFC /* en */,
 			);
 			name = InfoPlist.strings;
+			path = App;
 			sourceTree = "<group>";
 		};
 		FA3DE6B716A34213005B8CFC /* InfoPlist.strings */ = {
@@ -438,6 +499,7 @@
 				FA3DE6C116A34213005B8CFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA3DE6C216A34213005B8CFC /* Build configuration list for PBXNativeTarget "AppTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +508,7 @@
 				FA3DE6C416A34213005B8CFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
