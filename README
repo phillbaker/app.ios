@@ -1,0 +1,18 @@
+# App.ios
+
+A skeleton for starting new iOS project using Cocoapods.
+
+## Get Started
+
+  `gem install bundler`
+  `bundle install`
+  `pod install`
+  `open App.xcworkspace`
+
+## See Also
+
+https://gist.github.com/spilliams/5120426
+
+## License
+
+See LICENSE
