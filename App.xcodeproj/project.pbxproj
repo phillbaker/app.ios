@@ -25,6 +25,8 @@
 		FA3DE6B916A34213005B8CFC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA3DE6B716A34213005B8CFC /* InfoPlist.strings */; };
 		FA3DE6BC16A34213005B8CFC /* AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3DE6BB16A34213005B8CFC /* AppTests.m */; };
 		FAAA7C7717CCC84F004978E7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FAAA7C7617CCC84F004978E7 /* Podfile */; };
+		FAAA7C7917CCD1BA004978E7 /* App-iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAA7C7817CCD1BA004978E7 /* App-iPhone.storyboard */; };
+		FAAA7C7A17CCD1BA004978E7 /* App-iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAA7C7817CCD1BA004978E7 /* App-iPhone.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +61,8 @@
 		FA3DE6B816A34213005B8CFC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FA3DE6BA16A34213005B8CFC /* AppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppTests.h; sourceTree = "<group>"; };
 		FA3DE6BB16A34213005B8CFC /* AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppTests.m; sourceTree = "<group>"; };
-		FAAA7C7617CCC84F004978E7 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		FAAA7C7617CCC84F004978E7 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FAAA7C7817CCD1BA004978E7 /* App-iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "App-iPhone.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +202,7 @@
 		FAAA7C7317CCC763004978E7 /* Templates */ = {
 			isa = PBXGroup;
 			children = (
+				FAAA7C7817CCD1BA004978E7 /* App-iPhone.storyboard */,
 			);
 			name = Templates;
 			sourceTree = "<group>";
@@ -295,6 +299,7 @@
 				FA3DE6A116A34212005B8CFC /* Default@2x.png in Resources */,
 				FA3DE6A316A34212005B8CFC /* Default-568h@2x.png in Resources */,
 				FAAA7C7717CCC84F004978E7 /* Podfile in Resources */,
+				FAAA7C7917CCD1BA004978E7 /* App-iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA3DE6B916A34213005B8CFC /* InfoPlist.strings in Resources */,
+				FAAA7C7A17CCD1BA004978E7 /* App-iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
