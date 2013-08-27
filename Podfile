@@ -1,5 +1,10 @@
 platform :ios
 
-# pod 'FlurrySDK'
+# UI
 
+# APIs
+# pod 'AFNetworking'
 
+# Utilities
+
+# Test
