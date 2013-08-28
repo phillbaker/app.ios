@@ -17,3 +17,16 @@ https://github.com/gimenete/iOS-boilerplate
 ## License
 
 See LICENSE
+
+## Feedback
+
+Suggestions/improvements
+[welcome](https://github.com/phillbaker/app.ios/issues)!
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Added some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
